@@ -7,20 +7,20 @@
         </ion-buttons>
         <ion-title>Check Account</ion-title>
         <ion-buttons slot="end">
-          <ion-button :disabled="!isValidAccount" clear @click="checkAccount">
+          <mds-button :disabled="!isValidAccount" clear @click="checkAccount">
             <span v-if="requestPending">
               <ion-spinner/>
             </span>
             <span v-else>Check</span>
-          </ion-button>
+          </mds-button>
         </ion-buttons>
       </ion-toolbar>
     </ion-header>
     <ion-content padding class="content">
-      <h1>
+      <mds-micro-copy>
         Enter any username or email and<br>
         we'll check if it's been hacked<br>
-      </h1>
+      </mds-micro-copy>
       <div class="input-holder">
         <form @submit.prevent="checkAccount" action="#">
           <ion-item>
@@ -127,10 +127,10 @@ ion-spinner * {
   stroke: white;
 }
 
-ion-button,
-ion-button.button-clear,
-ion-button.button.button-clear.button-md.button-clear-md {
-  --ion-color-base: var(--beep-primary);
+mds-button,
+mds-button.button-clear,
+mds-button.button.button-clear.button-md.button-clear-md {
+  --ion-color-base: var(--mds-primary);
   text-transform: none;
 }
 
@@ -138,14 +138,8 @@ ion-back-button {
   --ion-color-base: var(--beep-primary);
 }
 
-h1 {
-  color: var(--ion-dark-transparent);
-  width: 100%;
-  font-size: 12px;
-  font-weight: normal;
-  letter-spacing: -0.29px;
-  line-height: 1.4;
-  text-align: center;
+mds-micro-copy {
+  margin-top: 20px;
 }
 
 ion-item {

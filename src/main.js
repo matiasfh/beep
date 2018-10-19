@@ -1,15 +1,18 @@
 import Vue from 'vue'
 import './theme/common.css'
 import { Ionic, IonicAPI } from '@modus/ionic-vue'
+import { defineCustomElements } from 'motherboard/dist/loader'
 import router from './router'
 import helpers from './helpers'
 import './registerServiceWorker'
 import BreachService from './breachesService'
-
 import { Capacitor, Plugins, StatusBarStyle } from '@capacitor/core'
 const { SplashScreen, StatusBar, Network } = Plugins
 
 Vue.config.productionTip = false
+Vue.config.ignoredElements = [/mds-\w*/] //Ignore motherboard components
+
+defineCustomElements(window)
 
 // Initialize Ionic
 Ionic.init()

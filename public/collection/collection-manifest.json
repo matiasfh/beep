@@ -1,0 +1,77 @@
+{
+  "components": [
+    {
+      "tag": "my-component",
+      "dependencies": [],
+      "componentClass": "MyComponent",
+      "componentPath": "components/my-component/my-component.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/my-component/my-component.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "first",
+          "type": "String",
+          "attr": "first"
+        },
+        {
+          "name": "last",
+          "type": "String",
+          "attr": "last"
+        },
+        {
+          "name": "middle",
+          "type": "String",
+          "attr": "middle"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "square-btn",
+      "dependencies": [],
+      "componentClass": "SquareBtn",
+      "componentPath": "components/square-button/square-button.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/square-button/square-button.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "clickTo",
+          "attr": "click-to"
+        },
+        {
+          "name": "image",
+          "type": "String",
+          "attr": "image"
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "attr": "text"
+        }
+      ],
+      "events": [
+        {
+          "event": "buttonClicked"
+        }
+      ],
+      "shadow": true
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.13.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}
