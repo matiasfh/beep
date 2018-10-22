@@ -30,7 +30,7 @@
     "@ionic/core": "4.0.0-beta.12",
     "@modus/ionic-vue": "1.0.12",
     "axios": "0.18.0",
-    "motherboard": "git+ssh://git@github.com/ModusCreateOrg/motherboard.git#stencil-build",
+    "motherboard": "git+ssh://git@github.com/ModusCreateOrg/motherboard.git#stencil-build-v2",
     "register-service-worker": "^1.0.0",
     "sha1": "1.1.1",
     "vue": "^2.5.16",
